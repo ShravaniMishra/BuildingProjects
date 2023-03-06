@@ -41,6 +41,12 @@ button{
 button:hover{
   background-color: green;
 }
+.list{
+  text-transform: capitalize;
+}
+.list >div> li> button:hover{
+  background-color: red;
+}
 .logo {
   height: 6em;
   padding: 1.5em;
