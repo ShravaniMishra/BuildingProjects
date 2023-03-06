@@ -1,5 +1,7 @@
 import { useState } from "react";
 import "./App.css";
+import {MdDeleteSweep}  from "react-icons/md";
+import {CgAdd} from "react-icons/cg";
 
 function App() {
   const [todo, setTodo] = useState("");
@@ -34,14 +36,19 @@ function App() {
           />
           <br />
           <br />
-          <button onClick={handleClick}> +👍</button>
+          <button onClick={handleClick}>
+            <CgAdd style={{fontSize:"25px"}}/>
+          </button>
         </div>
         <ol className="list">
           <div>
             {todos.map((elem, index) => {
               return (
                 <li>
-                  {elem} <button onClick={() => deleteTodo(index)}>❌</button>
+                  {elem}{" "}
+                  <button onClick={() => deleteTodo(index)}>
+                    <MdDeleteSweep style={{ fontSize: "20px" }} />
+                  </button>
                 </li>
               );
             })}
