@@ -25,7 +25,6 @@ function App() {
         <button onClick={handleClick}> +👍</button>
       </div>
       <ol>
-        {/* <li>{todo}</li> */}
         {
           todos.map((elem)=>{
             return  <li>{elem}</li>
