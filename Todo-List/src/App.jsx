@@ -20,8 +20,9 @@ function App() {
      <div className="App">
       <div className="inner_box">
         <h1>Todo List</h1>
+        <input type="text" placeholder='Add an Item' onChange={handleChange} className="input"/>
         <br />
-        <input type="text" placeholder='Add an Item' onChange={handleChange}/>
+        <br />
         <button onClick={handleClick}> +👍</button>
       </div>
       <ol>
