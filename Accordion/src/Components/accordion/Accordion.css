@@ -1,0 +1,32 @@
+.main {
+  width: 60%;
+  margin: auto;
+  margin-top: 50px;
+  padding: 0%;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 11px;
+  background-color: bisque;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.main > h1{
+     font-size: 30px;
+}
+.heading {
+  position: relative;
+  margin-top: 20px;
+  text-transform: capitalize;
+}
+
+.expand {
+  position: absolute;
+  top: -10px;
+  left: 25%;
+  
+}
+.mid{
+    width: 45%;
+    margin: auto;
+    text-align: justify;
+    /* transition: all 0.5s ease-in-out; */
+}
