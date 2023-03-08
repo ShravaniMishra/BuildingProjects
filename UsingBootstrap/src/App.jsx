@@ -11,7 +11,8 @@ function App() {
 const [count, setCount] = useState(0)
 
 useEffect(()=>{
-  alert("Hey You Clicked Me!!!")
+  // alert("Hey You Clicked Me!!!")
+  document.title = `Clicked ${count} times`;
 })
 
   return (
