@@ -14,10 +14,17 @@ const Statewise = () => {
     },[])
   return (
     <>
-    <h1>INDIA COVID-19 DASHBOARD</h1>
+    <h1 style={{color:"peru"}}>INDIA COVID-19 DASHBOARD</h1>
     {
         show.map((elem)=>{
-            return <div>Active : {elem.active} Confirmed : {elem.confirmed}</div>
+            return (
+              <div style={{display:"grid", gridTemplateColumns:"repeat(4,1fr)",gap:"20px",color:"teal" }}>
+                <h2>Active : {elem.active}</h2>
+                <h2>Confirmed : {elem.confirmed}</h2>
+                <h2>Deaths : {elem.deaths}</h2>
+                <h2>Deltaconfirmed : {elem.deltaconfirmed}</h2>
+              </div>
+            );
         })
     }
     </>
