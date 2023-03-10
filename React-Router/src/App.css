@@ -1,8 +1,12 @@
 #root {
+  font-family: 'Times New Roman', Times, serif;
   max-width: 100%;
   margin: 0 auto;
   /* padding: 2rem; */
   text-align: center;
+}
+body{
+  overflow-x: hidden;
 }
 .Nav{
   width: 100%;
@@ -24,18 +28,22 @@
   text-decoration: underline;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.Home_main{
+  width: 100%;
+  background-image: linear-gradient(rgb(52, 94, 94),rgb(202, 185, 202));
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.Home{
+  width: 80%;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.Home > img{
+  margin-left: -20%;
+  transition: all 0.5s ease-in;
 }
+.Home > div{
+  text-align: right;
+  margin-top: -100px;
+}
+
 
 @keyframes logo-spin {
   from {
