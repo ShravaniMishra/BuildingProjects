@@ -5,12 +5,14 @@ import About from './About';
 import Contact from './Contact';
 import Projects from './Projects';
 import Skills from './Skills';
+import Navbar from './Navbar';
 function App() {
   
 
   return (
     <div className="App">
       <>
+      <Navbar/>
         <Routes>
           <Route exact path="/" element={<Home/>}></Route>
           <Route exact path="/about" element={<About/>}></Route>
