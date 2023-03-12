@@ -35,7 +35,7 @@ const Home = () => {
             <h2>
               Hey It's me{" "}
               <span style={{ textDecoration: "bold", color: "brown" }}>
-                Queen of Govind.
+                Shravani Mishra.
               </span>
             </h2>
             <p></p>
