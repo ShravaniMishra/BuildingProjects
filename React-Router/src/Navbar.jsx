@@ -1,4 +1,5 @@
 import React from 'react'
+import { MoonIcon } from "@chakra-ui/icons";
 import { NavLink } from 'react-router-dom'
 const Navbar = () => {
   return (
@@ -20,6 +21,7 @@ const Navbar = () => {
           Projects
         </NavLink>
       </div>
+      <MoonIcon/>
     </>
   );
 }
