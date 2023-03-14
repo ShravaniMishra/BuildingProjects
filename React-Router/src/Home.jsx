@@ -10,8 +10,8 @@ const Home = () => {
   setInterval(handleClick, 1000);
   return (
     <>
-      <Box mt="25px">
-        <Heading as="h1" size="3xl" noOfLines={1} color="peru" ml="-15px">
+      <Box mt="20px">
+        <Heading as="h1" size="3xl" noOfLines={1} color="peru" ml="-15px" pb="5px">
           Welcome to My Website
         </Heading>
         <Heading as="h3" textAlign="right" mt="-50px">{time}</Heading>
@@ -19,6 +19,7 @@ const Home = () => {
           <Image
             borderRadius="full"
             boxSize="400px"
+            mt="20px"
             ml="40px"
             src="https://i.ibb.co/5K0cjj6/Whats-App-Image-2023-03-04-at-8-30-28-PM.jpg"
             alt="Shravani"
