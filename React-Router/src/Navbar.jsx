@@ -15,53 +15,51 @@ const Navbar = () => {
         <Box
           p="4"
           bg="gray.400"
+          color="black"
           gap="20px"
           w="100%"
           fontSize="4xl"
           justifyContent="space-between"
           display="flex"
           alignItems="center"
-          textDecoration="none"
+          
         >
           <Tabs
             w="100%"
-            fontSize="4xl"
             justifyContent="space-between"
             display="flex"
             alignItems="center"
-            textDecoration="none"
+            colorScheme="red"
           >
             <TabList
               w="100%"
-              fontSize="4xl"
               fontWeight="bold"
               justifyContent="space-between"
               display="flex"
               alignItems="center"
-              textDecoration="none"
-              color="red.800"
+              color="orange.500"
             >
-              <Tab>
+              <Tab fontSize="2xl">
                 <NavLink className="Nav_link" exact to="/">
                   Home
                 </NavLink>
               </Tab>
-              <Tab>
+              <Tab fontSize="2xl">
                 <NavLink className="Nav_link" exact to="/about">
                   About
                 </NavLink>
               </Tab>
-              <Tab>
+              <Tab fontSize="2xl">
                 <NavLink className="Nav_link" exact to="/contact">
                   Contact
                 </NavLink>
               </Tab>
-              <Tab>
+              <Tab fontSize="2xl">
                 <NavLink className="Nav_link" exact to="/skills">
                   Skills
                 </NavLink>
               </Tab>
-              <Tab>
+              <Tab fontSize="2xl">
                 <NavLink className="Nav_link" exact to="/projects">
                   Projects
                 </NavLink>

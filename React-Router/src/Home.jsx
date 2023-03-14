@@ -1,19 +1,19 @@
 import React, { useState } from "react";
-
+import { Box, Heading } from "@chakra-ui/react";
 const Home = () => {
-    let newTime = new Date().toLocaleTimeString();
-    const [time, setTime] = useState(newTime);
-    const handleClick = () => {
-      newTime = new Date().toLocaleTimeString();
-      setTime(newTime);
-    };
-    setInterval(handleClick, 1000);
+  let newTime = new Date().toLocaleTimeString();
+  const [time, setTime] = useState(newTime);
+  const handleClick = () => {
+    newTime = new Date().toLocaleTimeString();
+    setTime(newTime);
+  };
+  setInterval(handleClick, 1000);
   return (
     <>
-      <div>
-        <h1>
-          Welcome to my website
-        </h1>
+      <Box>
+        <Heading as="h1" size="3xl" noOfLines={1} color="peru">
+          Welcome to My Website
+        </Heading>
         <h3>{time}</h3>
         <div className="Home">
           <img
@@ -30,7 +30,7 @@ const Home = () => {
             <p></p>
           </div>
         </div>
-      </div>
+      </Box>
     </>
   );
 };
