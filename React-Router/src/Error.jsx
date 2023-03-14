@@ -5,7 +5,7 @@ import styled from "styled-components";
 const Error = () => {
   return (
     <Box bg="#FFF5F7" w="100%" h="500px" p="20px 10px 15px 20px">
-      <Heading as="h1" size="3xl" noOfLines={1} mt="45px" textAlign="center">
+      <Heading as="h1" size="3xl" noOfLines={1} mt="45px" textAlign="center" pb="20px">
         Oops !! 😭 404 Page Not Found
       </Heading>
       <Wrapper>
