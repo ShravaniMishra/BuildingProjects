@@ -5,6 +5,14 @@ import {
   Image,
   Text,
   Button,
+  useDisclosure,
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalHeader,
+  ModalFooter,
+  ModalBody,
+  ModalCloseButton,
 } from "@chakra-ui/react";
 const Home = () => {
   let newTime = new Date().toLocaleTimeString();
@@ -15,12 +23,15 @@ const Home = () => {
   };
   setInterval(handleClick, 1000);
 
-  const [text,setText] = useState("")
+  const [text, setText] = useState("");
 
-  const Change = ()=>{
-    setText('Shravani Mishra an Aspiring Full-Stack Web Developer')
-    alert('Welcome to my world 💕')
-  }
+  const { isOpen, onOpen, onClose } = useDisclosure();
+
+  const Change = () => {
+    setText("Shravani Mishra an Aspiring Full-Stack Web Developer");
+    
+  };
+
   return (
     <>
       <Box mt="20px">
@@ -67,10 +78,42 @@ const Home = () => {
           justifyContent="center"
           ml="33%"
           mt="20px"
+          gap="20px"
         >
           <Button colorScheme="whatsapp" onClick={Change}>
             Click Here 😍
           </Button>
+
+          <Button onClick={onOpen} colorScheme="red" gap="20px">
+            Please Click Me
+          </Button>
+
+          <Modal isOpen={isOpen} onClose={onClose}>
+            <ModalOverlay />
+            <ModalContent>
+              <ModalHeader>Reach Me</ModalHeader>
+              <ModalCloseButton />
+              <ModalBody>
+                <Text>Hi, I am Shravani from ODISHA. </Text>
+                <Text>
+                  I have completed my graduation in Btech ("IT") from College of
+                  Engineering and Technology.
+                </Text>
+                <Text>
+                  I joined full stack Web development course by Masai School a
+                  military type coding school.
+                </Text>
+                <Text>Want to connect with me than contact me - 8917390943.</Text>
+              </ModalBody>
+
+              <ModalFooter>
+                <Button colorScheme="blue" mr={3} onClick={onClose}>
+                  Close
+                </Button>
+                <Button variant="ghost">Action Required</Button>
+              </ModalFooter>
+            </ModalContent>
+          </Modal>
         </Box>
         <Box w="50%" ml="39%">
           <Heading
