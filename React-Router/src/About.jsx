@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import { Box, Text } from "@chakra-ui/react";
+import { Box, Text} from "@chakra-ui/react";
 
 const About = () => {
   const luckyName = useRef();
@@ -14,14 +14,39 @@ const About = () => {
 
   return (
     <>
-      <Box>
+      <Box bg="gray.50">
         <form action="" onSubmit={ChangeBy}>
-          <label htmlFor="">Enter Your Lucky Name</label>
-          <input type="text" placeholder="Name" ref={luckyName} />
+          <label style={{ color: "red", fontSize: "20px" }} htmlFor="">
+            Enter Your Lucky Name
+          </label>
           <br />
-          <button>Submit</button>
+          <input
+            style={{
+              textAlign: "center",
+              cursor: "pointer",
+              border: "2px solid black",
+              borderRadius: "10px",
+              textTransform: "capitalize",
+            }}
+            type="text"
+            placeholder="Name"
+            ref={luckyName}
+          />
+          <br />
+          <button
+            style={{
+              color: "peru",
+              fontSize: "20px",
+              border: "2px solid orange",
+              borderRadius: "10px",
+              width:"100px",
+              marginTop:"10px"
+            }}
+          >
+            Submit
+          </button>
         </form>
-        <Text>
+        <Text style={{ color: "red", fontSize: "25px" }}>
           {show ? `Your Lucky Name is ${luckyName.current.value}` : ""}
         </Text>
       </Box>
