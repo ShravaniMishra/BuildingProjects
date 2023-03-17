@@ -39,14 +39,20 @@ const About = () => {
               fontSize: "20px",
               border: "2px solid orange",
               borderRadius: "10px",
-              width:"100px",
-              marginTop:"10px"
+              width: "100px",
+              marginTop: "10px",
             }}
           >
             Submit
           </button>
         </form>
-        <Text style={{ color: "red", fontSize: "25px" }}>
+        <Text
+          style={{
+            color: "red",
+            fontSize: "25px",
+            textTransform: "capitalize",
+          }}
+        >
           {show ? `Your Lucky Name is ${luckyName.current.value}` : ""}
         </Text>
       </Box>
